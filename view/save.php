@@ -16,13 +16,13 @@
                         <input type="text" class="form-control" placeholder="Name" name="name" />
                     </div>
                     <div class="form-group">
-                        Your email address if you want to be notified as soon as the level was included.
+                        Your email address if you want to be notified as soon as the level was included. You can also leave this blank.
                         <input type="email" class="form-control" placeholder="Email" name="email" />
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="checkAgree" id="checkAgree">
                         <label class="form-check-label" for="checkAgree">
-                            I agree that the level I designed will be included in the app Flowit. I provide a license for this use free of charge. Required.
+                            I agree that the level I designed will be included in the app Flowit. I agree to publish the level under the terms of the GPL-3 open-source license. Required.
                         </label>
                     </div>
                     <input type="hidden" name="save" value="true">

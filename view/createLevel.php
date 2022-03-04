@@ -3,6 +3,9 @@
         if (@$sendResult != "") {
             echo $sendResult;
         }
+        if (loadConfig() == null) {
+            echo "<p class='alert alert-danger'>Server not set up properly. Missing or malformed config.json file in the root directory. Copy config.dist.json and adapt values.</p>";
+        }
     ?>
     <div class="alert alert-primary screen-size-warning">
         This website works best on big PC screens.
