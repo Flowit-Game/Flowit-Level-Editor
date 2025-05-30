@@ -69,6 +69,7 @@ function isSolved() {
 if(isset($_GET["c"])) {
     $c = $_GET["c"];
     $r = $_GET["r"];
+    $_SESSION["play_history"] .= range('A', 'Z')[intval($r)] . "$c,";
     if($_SESSION["play_data"][$r][$c]["type"] == TYPE_BOMB) {
         $color = $_SESSION["play_data"][$r][$c]["dest_color"];
         setFieldColor($r-1, $c-1, $color);setFieldType($r-1, $c-1, TYPE_EMPTY);

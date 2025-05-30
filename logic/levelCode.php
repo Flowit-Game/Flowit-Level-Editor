@@ -12,6 +12,7 @@ function getLevelCode($name) {
 
     $code  = "    <level number=\"\"\n";
     $code .= "        author=\"$name\"\n";
+    $code .= "        solution=\"" . $_SESSION["play_history"] . "\"\n";
     $code .= "        color=\"";
 
     $isFirst = true;
