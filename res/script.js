@@ -30,8 +30,7 @@ function api(url) {
     });
 }
 
-document.onkeydown = checkKey;
-function checkKey(e) {
+function handleKeyboardShortcuts(e) {
     e = e || window.event;
     if (e.keyCode == '38' || e.key == 'w') {
         // up arrow

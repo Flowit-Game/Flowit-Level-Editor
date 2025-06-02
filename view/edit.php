@@ -14,5 +14,8 @@
         <?php
             include("view/editor-toolbox.php");
         ?>
+        <script>
+            document.onkeydown = handleKeyboardShortcuts;
+        </script>
     </div>
 </div>
