@@ -8,7 +8,6 @@ if (@$_GET["action"] == "restart") {
     include("logic/handleEditUpdates.php");
 } else if (@$_GET["action"] == "play" && @$_GET["play"] == "restart") {
     $_SESSION["play_data"] = @$_SESSION["level_data"];
-    $_SESSION["play_history"] = "";
 } else if (@$_GET["action"] == "play") {
     include("logic/handlePlayUpdates.php");
 } else if (!isset($_SESSION["level_data"]) && isset($_GET["cols"]) && isset($_GET["rows"])) {

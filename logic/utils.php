@@ -11,6 +11,7 @@ function contains($haystack, $needle) {
 function resetLevel() {
     unset($_SESSION["level_data"]);
     $_SESSION["solved"] = false;
+    $_SESSION["play_history"] = "";
 }
 
 function loadConfig() {

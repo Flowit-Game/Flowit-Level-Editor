@@ -1,5 +1,6 @@
 <?php
 $_SESSION["solved"] = false;
+$_SESSION["play_history"] = "";
 
 if (@$_GET["action"] == "save_color") {
     if(isset($_SESSION["level_data"][$_GET["r"]][$_GET["c"]]["dest_color"]))
